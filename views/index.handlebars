@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yap Corner</title>
+</head>
+<body>
+    <h1>Yap Corner</h1>
+
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Log In</button>
+    </form>
+
+    <h1>Create a Yap</h1>
+    <form action="/createPost" method="POST">
+        <textarea name="content" placeholder="Say something..." required></textarea>
+        <input type="text" name="userId" placeholder="Your user ID" required />
+        <button type="submit">Post</button>
+    </form>
+
+</body>
+</html>
