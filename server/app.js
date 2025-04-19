@@ -29,14 +29,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.use(favicon(path.join(__dirname, '../client/favicon.png')));
+app.use(favicon(path.join(__dirname, 'client/img/favicon.png')));
 
 app.engine('handlebars', expressHandlebars.engine({
     defaultLayout: '',
 }));
 app.set('view engine', 'handlebars');
 
-app.set('views', `${__dirname}/../views`);
+app.set('views', path.join(__dirname, '../views'));
+
+routes(app);
 
 app.listen(port, (err) => {
     if (err) {

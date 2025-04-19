@@ -7,7 +7,8 @@
     "nodemon": "nodemon --watch ./server ./server/app.js",
     "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
-    "test": "echo \"tests complete\""  },
+    "test": "echo \"tests complete\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +19,11 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "dependencies": {
+    "compression": "^1.8.0",
+    "express-handlebars": "^8.0.2",
+    "mongoose": "^8.13.2",
+    "serve-favicon": "^2.5.0"
   }
 }

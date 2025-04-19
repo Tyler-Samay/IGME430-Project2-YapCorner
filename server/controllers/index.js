@@ -80,7 +80,7 @@ const getPosts = async (req, res) => {
 
 // 404 Page
 const notFound = (req, res) => {
-    res.status(404).render('404', { page: req.url });
+    res.status(404).send('Page not found');
 };
 
 // Export all
