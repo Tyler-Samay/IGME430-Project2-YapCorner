@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const compression = require('compression');
-const favicon = require('serve-favicon');
+// const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const expressHandlebars = require('express-handlebars');
@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.use(favicon(path.join(__dirname, 'client/img/favicon.png')));
+// app.use(favicon(path.join(__dirname, 'client/img/favicon.png')));
 
 app.engine('handlebars', expressHandlebars.engine({
   defaultLayout: '',
