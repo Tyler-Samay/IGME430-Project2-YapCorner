@@ -21,7 +21,9 @@
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
     "compression": "^1.8.0",
+    "express": "^5.1.0",
     "express-handlebars": "^8.0.2",
     "mongoose": "^8.13.2",
     "serve-favicon": "^2.5.0"
