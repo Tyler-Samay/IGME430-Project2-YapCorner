@@ -23,7 +23,7 @@ mongoose.connect(dbURI).catch((err) => {
 
 const app = express();
 
-app.use('/assets', express.static(path.join(__dirname, '../client/')));
+app.use('/assets', express.static(path.join(__dirname, 'client')));
 
 app.use(compression());
 
